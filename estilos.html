@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Programación de sitios web</title>
+<meta name="author" content="Lina Saldarriaga Perea">
+    <meta description = "Creación de Página web en HTML y CSS"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Programación de sitios web 32</title>
+<link rel="stylesheet" href="css/estilo.css">
+</head>
+
+<header id="main-header">
+
+        <a id="logo-header" href="#">
+        <span class="datos.html">Lina Saldarriaga</span>
+        <span class="site-desc">Programación de sitios Web </span>
+        </a> 
+        
+        <nav>
+        <ul>
+        <li><a href="web.html">Inicio</a></li>
+        <li><a href="datos.html">Acerca de</a></li>
+        <li><a href="etiquetas.html">Etiquetas HTML</a></li>
+        <li><a href="estilos.html">Estilos CSS</a></li>
+        </ul>
+        </nav>
+        
+        </header>
+<body>
+
+
+<section id="main-content">
+<article>
+<header>
+<h1> ESTILOS EN CSS </h1>
+</header>
+
+<div class="content">
+<p>Es importante saber que CSS funciona mediante reglas que aplicamos a los diferentes selectores de nuestro sitio web. <br/>
+
+        Así como HTML se basa en etiquetas que encierran contenidos (párrafos, títulos…) CSS asigna a estas etiquetas unos atributos visuales mediante reglas. <br/>
+        
+        Para entender esto vamos a explicar cómo es una regla CSS por partes: </p>
+<b>Selector:</b> Es la referencia a la etiqueta, id o clase HTML. <br/>
+<b>Declaración:</b> Incluye las propiedades a aplicar al selector indicado. <br/>
+<b>Propiedad:</b> Indica el atributo a modificar. <br/>
+<b>Valor:</b> El valor asignado a la propiedad. <br/><br/><br/>
+
+        <img src="img/reglacss.png" alt="" class="foto",  style="max-width:100%;width:auto;height:auto;" > 
+
+    <table class ="tabla">
+<tr>
+    <th>SINTAXIS</th>
+    <th>DESCRIPCIÓN</th>
+    
+</tr>
+<tr>    
+    <td>  
+            h1 {color:black;}
+    </td>
+    <td>Asignamos color negro a todas las etiquetas h1</td>
+</tr>
+<tr>    
+        <td>  
+                p { font-family: pequeño; color: verde; }
+        </td>
+        <td>El selector, p, indica que la regla del estilo se debe aplicar a todos los párrafos en documento. Hay dos declaraciones en la regla. 
+            La primera, que establece que todos los párrafos deben tener un tamaño de fuente equivalente a pequeña; y la segunda declaración, que establece
+             que el color se fije al verde.  El resultado de esta regla es que todos los párrafos en el documento aparecerán en color verde y fuente pequeña.</td>
+    </tr>
+    <tr>    
+            <td>  
+                    a {text-decoration:none; color:red;}
+            </td> <td>  Le quitamos el subrayado a los enlaces y les damos color rojo </td>
+        </tr>
+        <tr>    
+                <td>  
+                        .resaltado {font-size:20px;}
+                </td> <td>  Aplicamos el tamaño de fuente a 20 pixeles a la clase «.resaltado».  </td>
+            </tr>
+            <tr>    
+                    <td>  
+                            #primero {
+                                font-size: 70%;
+                                }
+                    </td> <td> Un selector ID debe de definirse en la hoja de estilo y se debe de incluir luego dentro de la etiqueta del HTML.
+                         Para identificar el selector ID se usa el símbolo # </td>
+                </tr>
+                <tr>    
+                        <td>  
+                          
+                             p {
+                                font-family: 'Verdana', Arial, serif;
+                                }
+                            
+                        </td>    <td> Las características del CSS, nos permiten asignar una lista de valores posibles a la propiedad y no sólo un valor fijo o único, es decir, se pueden establecer diferentes tipos de tipografías para un mismo párrafo. </td>
+                    </tr>
+                    <tr>    
+                            <td>  
+                                    * {
+                                        Color: rojo;
+                                        }
+                            </td>    <td>El selector universal, escrito "*", se corresponde con el nombre de cualquier tipo de elemento. 
+                                Es un selector muy práctico para cuando queremos dar la misma característica a todos los elementos de la página. </td>
+                        </tr>
+                        <tr>    
+                                <td>  
+                                        p: first-letter { 
+ 
+                                            font-face: serif;
+                                            font-size: 500%;
+                                            float: left;
+                                            color: gray;
+                                             
+                                            }
+                                </td>    <td> Con este pseudo-elemento, la primera letra en cada párrafo, será cinco veces más grande que el tipo generalmente usado en párrafos. 
+                                    La característica float, conseguiría además, que el texto restante flotara alrededor de la letra. </td>
+                            </tr>
+                            <tr>    
+                                    <td>  
+                                            a: hover {
+                                                color: green;
+                                                }
+                                    </td>    <td> Una pseudoclase CSS es una palabra clave que se añade a los selectores y que especifica un estado especial del elemento seleccionado. 
+                                        Por ejemplo,  :hover aplicará un estilo cuando el usuario haga hover sobre el elemento especificado por el selector. </td>
+                                </tr>
+                                
+    </table>
+</div>
+
+</article>	
+
+</section>
+
+<footer id="main-footer">
+<p>&copy; 2019 <a href="http://fescontacto.com/pswunad/">LinaSaldarriaga</a></p>
+<a href="https://www.contadorvisitasgratis.com" title="contador web"><img src="https://counter7.wheredoyoucomefrom.ovh/private/contadorvisitasgratis.php?c=bqrn62jrgzd183n3cdt12zlkd5a8bh9k" border="0" title="contador web" alt="contador web"></a>
+</footer>
